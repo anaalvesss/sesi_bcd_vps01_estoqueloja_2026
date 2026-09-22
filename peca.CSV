@@ -1,0 +1,4 @@
+id_peca,nome,descricao,quantidade_estoque,estoque_minimo,preco
+1,pasta termica,composto para reajuste de calor em notebooks,15,5,35
+2,capacitador de partida,componente para motor de ar condicionado,4,3,28
+3,fusor,reposicao da impressora e reajuste da funcao,2,1,450

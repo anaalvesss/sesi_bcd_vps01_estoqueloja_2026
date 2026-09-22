@@ -1,0 +1,4 @@
+id_ordem,id_equipamento,tipo,descricao,data_abertura,data_inicio,data_fim,status,prioridade
+52,1,prevencao,limpeza interna,16/09/2026,19/09/2026,22/09/2026,em andamento,baixa
+53,2,correcao,vazamento de agua na ventilacao,15/09/2026,16/09/2026,20/09/2026,concluida,media
+54,3,correcao,impressora travando folhas de papel,14/09/2026,15/09/2026,18/09/2026,concluida,alta

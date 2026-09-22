@@ -1,0 +1,4 @@
+id,nome,tipo,marca,modelo,numero_serie,data_aquisicao,status,setor,valor_aquisicao
+1,Notebook ,escritorio/trabalho,Dell,Latitude 5440,BR7X91W80,22/09/2026,Ativo,Administrativo,5.200,00
+2,Ar Condicionado,climatizacao,Consul,Jet Pro,CNB1K2C304,22/09/2026,Ativo,Sala,2.100,00
+3,Impressora,escritorio/trabalho,HP,EcoInverter,MN9785576,23/09/2026,Ativo,Administrativo,1.480,00

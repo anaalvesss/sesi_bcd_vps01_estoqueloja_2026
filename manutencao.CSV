@@ -1,0 +1,3 @@
+id_manutencao,id_ordem,id_tecnico,descricao_servico,data_excecucao,horas_trabalhadas,observacoes
+1,53,2,realizado testes e troca do motor,16/09/2026,4 horas,equipamento testado e pronto
+2,54,3,substituicao do fusor e limpeza da impressora,15/09/2026,2 horas,equipamento testado e pronto

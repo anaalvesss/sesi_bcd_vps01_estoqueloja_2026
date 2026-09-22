@@ -14,7 +14,7 @@
 
 | Entidade | Atribuição | Tipo | Tamanho | Descrição |
 | --- | --- | --- | --- | --- |
-| equipamento | id | inteiro | 11 | identificador, chave primária |
+| equipamento | id | inteiro | 11 | identificador, PRIMARY KEY |
 | equipamento | nome | texto | 100 | nome do aparelho |
 | equipamento | tipo | texto | 50 | tipo de uso do item |
 | equipamento | marca | texto | 50 | fabricante do equipamento |
@@ -24,19 +24,19 @@
 | equipamento | status | texto | 20 | status atual do equipamento |
 | equipamento | setor | texto | 50 | setor onde o item fica alocado |
 | equipamento | valor_aquisicao | decimal | 10,2 | preço pago pelo equipamento |
-| técnico | id | inteiro | 11 | identificador, chave primária |
+| técnico | id | inteiro | 11 | identificador, PRIMARY KEY |
 | técnico | nome | texto | 100 | nome do técnico |
 | técnico | telefone | texto | 20 | telefone do técnico |
 | técnico | email | texto | 100 | e-mail do técnico |
 | técnico | especialidade | texto | 100 | especialidade principal |
-| peça | id_peca | inteiro | 11 | identificador, chave primária |
+| peça | id_peca | inteiro | 11 | identificador, PRIMARY KEY |
 | peça | nome | texto | 100 | nome da peça |
 | peça | descricao | texto | - | para que serve o componente |
 | peça | quantidade_estoque | inteiro | 11 | quantidade atual no estoque |
 | peça | estoque_minimo | inteiro | 11 | estoque mínimo aceitável |
 | peça | preco | decimal | 10,2 | preço unitário da peça |
-| ordem_manutencao | id_ordem | inteiro | 11 | identificador, chave primária |
-| ordem_manutencao | id_equipamento | inteiro | 11 | chave estrangeira referenciando equipamento (id) |
+| ordem_manutencao | id_ordem | inteiro | 11 | identificador, PRIMARY KEY |
+| ordem_manutencao | id_equipamento | inteiro | 11 | FOREIGN KEY referenciando equipamento (id) |
 | ordem_manutencao | tipo | texto | 30 | preventiva ou corretiva |
 | ordem_manutencao | descricao | texto | - | defeito ou problema relatado |
 | ordem_manutencao | data_abertura | data | - | data de abertura do chamado |
@@ -44,15 +44,15 @@
 | ordem_manutencao | data_fim | data | - | data de término do serviço |
 | ordem_manutencao | status | texto | 20 | situação da ordem de serviço |
 | ordem_manutencao | prioridade | texto | 20 | urgência (baixa/média/alta) |
-| manutencao | id_manutencao | inteiro | 11 | identificador, chave primária |
-| manutencao | id_ordem | inteiro | 11 | chave estrangeira referenciando ordem_manutencao (id_ordem) |
-| manutencao | id_tecnico | inteiro | 11 | chave estrangeira referenciando tecnico (id) |
+| manutencao | id_manutencao | inteiro | 11 | identificador, PRIMARY KEY |
+| manutencao | id_ordem | inteiro | 11 | FOREIGN KEY referenciando ordem_manutencao (id_ordem) |
+| manutencao | id_tecnico | inteiro | 11 | FOREIGN KEY referenciando tecnico (id) |
 | manutencao | descricao_servico | texto | - | relatório do que foi feito |
 | manutencao | data_execucao | data | - | data do reparo real |
 | manutencao | horas_trabalhadas | texto | 20 | tempo total gasto no serviço |
 | manutencao | observacoes | texto | - | notas extras sobre o resultado |
-| pecas_manutencao | id_manutencao | inteiro | 11 | chave primária, chave estrangeira referenciando manutencao (id_manutencao) |
-| pecas_manutencao | id_peca | inteiro | 11 | chave primária, chave estrangeira referenciando peca (id_peca) |
+| pecas_manutencao | id_manutencao | inteiro | 11 | PRIMARY KEY, FOREIGN KEY referenciando manutencao (id_manutencao) |
+| pecas_manutencao | id_peca | inteiro | 11 | PRIMARY KEY, FOREIGN KEY referenciando peca (id_peca) |
 | pecas_manutencao | quantidade | decimal | 10,2 | quantidade de peças utilizada |
 
 ---

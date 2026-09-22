@@ -73,6 +73,7 @@
 
 # Códigos DML E DDL
 ## DDL
+```
 DROP DATABASE IF EXISTS loja_eletronicos;
 CREATE DATABASE loja_eletronicos;
 USE loja_eletronicos;
@@ -135,8 +136,9 @@ CREATE TABLE pecas_manutencao (
     FOREIGN KEY (id_manutencao) REFERENCES manutencao(id_manutencao),
     FOREIGN KEY (id_peca) REFERENCES peca(id_peca)
 );
-
+```
 ## DML
+```
 INSERT INTO equipamento (id, nome, tipo, marca, modelo, numero_serie, data_aquisicao, status, setor, valor_aquisicao) VALUES
 (1, 'notebook', 'escritório/trabalho', 'dell', 'latitude 5440', 'BR7X91W80', '2026-09-22', 'ativo', 'administrativo', 5200.00),
 (2, 'ar condicionado', 'climatização', 'consul', 'jet pro', 'CNB1K2C304', '2026-09-22', 'ativo', 'sala', 2100.00),
@@ -177,3 +179,4 @@ INSERT INTO pecas_manutencao (id_manutencao, id_peca, quantidade) VALUES
 (2, 3, 1.0);
 
 select * from pecas_manutencao;
+```

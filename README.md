@@ -4,14 +4,11 @@
 | Neste desafio, é abordado uma elaboração de um banco de dados em vista de manutenção de equipamentos em uma fábrica, onde o objetivo é controlar os equipamentos, seu histórico de manutenção, os técnicos responsáveis, peças utilizadas e as ordens de serviço. |
 
 # MER DER 
-## MER DER lógico
-``` img ```
-
-## MER DER conceitual
-``` img ```
-
+``` MER DER lógico ```
+![imagem](./MERDERlógico.jpg)
+``` MER DER conceitual ```
+![imagem2](./MERDERconceitual.jpg)
 # Dicionário de Dados (markdown)
-
 | Entidade | Atribuição | Tipo | Tamanho | Descrição |
 | --- | --- | --- | --- | --- |
 | equipamento | id | inteiro | 11 | identificador, PRIMARY KEY |

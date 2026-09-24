@@ -60,17 +60,51 @@
 # Links das tabelas estilo CSV
 
 ### link para [equipamento.csv](./equipamento.csv)
+```
+id,nome,tipo,marca,modelo,numero_serie,data_aquisicao,status,setor,valor_aquisicao
+1,Notebook ,escritorio/trabalho,Dell,Latitude 5440,BR7X91W80,22/09/2026,Ativo,Administrativo,5.200,00
+2,Ar Condicionado,climatizacao,Consul,Jet Pro,CNB1K2C304,22/09/2026,Ativo,Sala,2.100,00
+3,Impressora,escritorio/trabalho,HP,EcoInverter,MN9785576,23/09/2026,Ativo,Administrativo,1.480,00
 
+```
 ### link para [tecnico.csv](./tecnico.csv)
+```
+id,nome,telefone,email,especialidade
+1,Bruno,(19)99999-8888,bruno@gmail.com,informatica
+2,Gustavo,(19)99999-8889,gustavo@gmail.com,refrigeracao
+3,Henrique,(19)99999-8890,henrique@gmail.com,mecanica
 
+```
 ### link para [peca.csv](./peca.csv)
+```
+id_peca,nome,descricao,quantidade_estoque,estoque_minimo,preco
+1,pasta termica,composto para reajuste de calor em notebooks,15,5,35
+2,capacitador de partida,componente para motor de ar condicionado,4,3,28
+3,fusor,reposicao da impressora e reajuste da funcao,2,1,450
 
+```
 ### link para [ordem_manutencao.csv](./ordem_manutencao.csv)
+```
+id_ordem,id_equipamento,tipo,descricao,data_abertura,data_inicio,data_fim,status,prioridade
+52,1,prevencao,limpeza interna,16/09/2026,19/09/2026,22/09/2026,em andamento,baixa
+53,2,correcao,vazamento de agua na ventilacao,15/09/2026,16/09/2026,20/09/2026,concluida,media
+54,3,correcao,impressora travando folhas de papel,14/09/2026,15/09/2026,18/09/2026,concluida,alta
 
+```
 ### link para [manutencao.csv](./manutencao.csv)
-
+```
+id_manutencao,id_ordem,id_tecnico,descricao_servico,data_excecucao,horas_trabalhadas,observacoes
+1,53,2,realizado testes e troca do motor,16/09/2026,4 horas,equipamento testado e pronto
+2,54,3,substituicao do fusor e limpeza da impressora,15/09/2026,2 horas,equipamento testado e pronto
+```
 ### link para [pecas_manutencao.csv](./pecas_manutencao.csv)
+```
+id_manutencao,id_peca,quantidade
+1,1,1.0
+2,2,1.2
+3,3,1.0
 
+```
 # Códigos DML E DDL
 ## DDL
 ```
